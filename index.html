@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuan Genggeng — Senior Backend Engineer</title>
+  <meta name="description" content="Senior Backend Engineer with 6+ years in distributed systems. Based in Tokyo, Japan." />
+  <meta name="keywords" content="Backend Engineer, Kotlin, Java, Spring Boot, Tokyo, Software Developer, Yuan Genggeng" />
+  <meta property="og:title" content="Yuan Genggeng — Senior Backend Engineer" />
+  <meta property="og:description" content="Senior Backend Engineer specializing in distributed systems, Kotlin/Java ecosystems, and AI-augmented workflows." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">YG</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"      class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills"     class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#projects"   class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact"    class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <!-- Language Switcher -->
+      <div class="lang-switcher" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中</button>
+        <button class="lang-btn" data-lang="ja" aria-pressed="false">日</button>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <a href="#about"      class="mobile-nav-link" data-i18n="nav.about">About</a>
+      <a href="#skills"     class="mobile-nav-link" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" class="mobile-nav-link" data-i18n="nav.experience">Experience</a>
+      <a href="#projects"   class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+      <a href="#contact"    class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
+      <!-- Mobile lang switcher -->
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中</button>
+        <button class="lang-btn" data-lang="ja" aria-pressed="false">日</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">Available for opportunities</span>
+      </div>
+      <h1 class="hero-name" data-i18n="hero.name" data-i18n-html>Yuan <span class="text-gradient">Genggeng</span></h1>
+      <p class="hero-title" data-i18n="hero.title">Senior Backend Engineer</p>
+      <p class="hero-sub"   data-i18n="hero.sub">6+ years in large-scale distributed systems &bull; Java/Kotlin &bull; Tokyo, Japan</p>
+      <div class="hero-tags" role="list" aria-label="Key technologies">
+        <span class="tag" role="listitem" data-i18n="hero.tag1">Java / Kotlin</span>
+        <span class="tag" role="listitem" data-i18n="hero.tag2">Spring Boot</span>
+        <span class="tag" role="listitem" data-i18n="hero.tag3">Distributed Systems</span>
+        <span class="tag" role="listitem" data-i18n="hero.tag4">Next.js</span>
+        <span class="tag" role="listitem" data-i18n="hero.tag5">AI-Augmented Dev</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#experience" class="btn btn-primary" data-i18n="hero.cta.primary">View Experience</a>
+        <a href="#contact"    class="btn btn-ghost"   data-i18n="hero.cta.ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label" data-i18n="about.label">// about me</div>
+      <h2 id="about-heading" class="section-title" data-i18n="about.title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead" data-i18n="about.lead" data-i18n-html>
+            Senior Backend Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, backed by a <strong>20-year foundation</strong> in software development.
+          </p>
+          <p data-i18n="about.p1" data-i18n-html>
+            Extensive hands-on experience with <strong>Java/Kotlin</strong> ecosystems and <strong>Spring Boot</strong>. Strong background in Legacy Modernization within the insurance sector and large-scale data migration for e-commerce platforms.
+          </p>
+          <p data-i18n="about.p2" data-i18n-html>
+            Proficient in modern full-stack development (<strong>Next.js / Convex / FastAPI</strong>) and highly efficient in <strong>AI-augmented workflows</strong> using Claude Code, Codex, and Antigravity.
+          </p>
+          <div class="about-lang">
+            <div class="lang-item">
+              <span class="lang-name" data-i18n="about.lang.zh">&#127464;&#127475; Chinese</span>
+              <span class="lang-level" data-i18n="about.level.native">Native</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name" data-i18n="about.lang.ja">&#127471;&#127477; Japanese</span>
+              <span class="lang-level" data-i18n="about.level.business">Business</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name" data-i18n="about.lang.en">&#127482;&#127480; English</span>
+              <span class="lang-level" data-i18n="about.level.business">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <div class="stat-number" data-count="20">0</div>
+            <div class="stat-unit">+</div>
+            <div class="stat-label" data-i18n="about.stat1.label">Years in Software</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number" data-count="6">0</div>
+            <div class="stat-unit">+</div>
+            <div class="stat-label" data-i18n="about.stat2.label">Years Backend Specialist</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number" data-count="300">0</div>
+            <div class="stat-unit">M</div>
+            <div class="stat-label" data-i18n="about.stat3.label">Records Migrated</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-number" data-count="10">0</div>
+            <div class="stat-unit">+</div>
+            <div class="stat-label" data-i18n="about.stat4.label">Languages &amp; Frameworks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-label" data-i18n="skills.label">// technical skills</div>
+      <h2 id="skills-heading" class="section-title" data-i18n="skills.title">What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#9881;&#65039;</div>
+          <h3 class="skill-card-title" data-i18n="skills.backend.title">Backend Development</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Java</span>
+            <span class="stag stag-primary">Kotlin</span>
+            <span class="stag stag-primary">Python (FastAPI)</span>
+            <span class="stag">Spring Boot</span>
+            <span class="stag">DDD</span>
+            <span class="stag">RESTful APIs</span>
+            <span class="stag">Vert.x</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#128269;</div>
+          <h3 class="skill-card-title" data-i18n="skills.search.title">Search &amp; Data</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Meilisearch</span>
+            <span class="stag stag-primary">Kafka (CDC)</span>
+            <span class="stag">Cassandra</span>
+            <span class="stag">Couchbase</span>
+            <span class="stag">Oracle</span>
+            <span class="stag">Redis</span>
+            <span class="stag">RabbitMQ</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#9729;&#65039;</div>
+          <h3 class="skill-card-title" data-i18n="skills.cloud.title">Cloud &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Azure (AKS)</span>
+            <span class="stag stag-primary">Railway</span>
+            <span class="stag">AWS</span>
+            <span class="stag">Docker</span>
+            <span class="stag">Minikube</span>
+            <span class="stag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#129302;</div>
+          <h3 class="skill-card-title" data-i18n="skills.ai.title">AI Tools</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Claude Code</span>
+            <span class="stag stag-primary">Antigravity</span>
+            <span class="stag">Codex</span>
+            <span class="stag">DeepSeek</span>
+            <span class="stag">AI-Augmented Workflows</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#127760;</div>
+          <h3 class="skill-card-title" data-i18n="skills.frontend.title">Frontend &amp; Full-Stack</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Next.js</span>
+            <span class="stag stag-primary">React.js</span>
+            <span class="stag">Vue.js</span>
+            <span class="stag">Convex</span>
+            <span class="stag">Tailwind CSS</span>
+            <span class="stag">TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">&#128187;</div>
+          <h3 class="skill-card-title" data-i18n="skills.langs.title">Languages</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Kotlin</span>
+            <span class="stag stag-primary">Java</span>
+            <span class="stag">Python</span>
+            <span class="stag">TypeScript</span>
+            <span class="stag">C#</span>
+            <span class="stag">PHP</span>
+            <span class="stag">Go</span>
+            <span class="stag">Rust</span>
+            <span class="stag">C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-label" data-i18n="exp.label">// work history</div>
+      <h2 id="exp-heading" class="section-title" data-i18n="exp.title">Professional Experience</h2>
+      <div class="timeline">
+
+        <!-- NTT DATA -->
+        <article class="timeline-item reveal" aria-label="NTT DATA">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">NTT DATA</h3>
+                <p class="timeline-role">
+                  <span data-i18n="exp.ntt.role">Contract Backend Engineer</span>
+                  <span class="via" data-i18n="exp.ntt.via">(via Staffing Agency)</span>
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period" data-i18n="exp.ntt.period">Apr 2025 — Present</span>
+                <span class="timeline-location">&#128205; Tokyo, Japan</span>
+                <span class="timeline-badge badge-active" data-i18n="exp.ntt.badge">Current</span>
+              </div>
+            </div>
+            <div class="timeline-project">
+              <span class="project-tag" data-i18n="exp.ntt.project">Insurance System Modernization</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.ntt.b1" data-i18n-html>Migrating a <strong>legacy insurance core system</strong> from Struts 1.x / JDK 1.7 to <strong>Spring MVC / JDK 17</strong></li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-pill">Java 17</span>
+              <span class="tech-pill">Spring MVC</span>
+              <span class="tech-pill">Oracle</span>
+              <span class="tech-pill">TERASOLUNA</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Rakuten -->
+        <article class="timeline-item reveal" aria-label="Rakuten Group">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Rakuten Group, Inc.</h3>
+                <p class="timeline-role" data-i18n="exp.rakuten.role">Backend Engineer</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period" data-i18n="exp.rakuten.period">Sep 2021 — Mar 2025</span>
+                <span class="timeline-location">&#128205; Tokyo, Japan</span>
+              </div>
+            </div>
+            <div class="timeline-project">
+              <span class="project-tag" data-i18n="exp.rakuten.project1">Membership System &amp; Database Migration</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.rakuten.b1" data-i18n-html>Refactored Java-based membership APIs into <strong>Kotlin/Vert.x</strong> services using DDD principles</li>
+              <li data-i18n="exp.rakuten.b2" data-i18n-html>Migrated Couchbase to <strong>Cassandra</strong> using <strong>Kafka-based CDC</strong> for real-time sync</li>
+              <li data-i18n="exp.rakuten.b3" data-i18n-html>Performance tested with <strong>Gatling</strong> across <strong>300 million records</strong></li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-pill">Kotlin</span>
+              <span class="tech-pill">Vert.x</span>
+              <span class="tech-pill">Cassandra</span>
+              <span class="tech-pill">Kafka</span>
+              <span class="tech-pill">Gatling</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+            <div class="timeline-project" style="margin-top:1.25rem">
+              <span class="project-tag" data-i18n="exp.rakuten.project2">Rakuten Fashion (E-commerce)</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.rakuten.b4" data-i18n-html>Built batch systems with <strong>Spring Boot + RabbitMQ</strong> for automated order error handling</li>
+              <li data-i18n="exp.rakuten.b5" data-i18n-html>Standardized API specs with <strong>Swagger (OpenAPI)</strong> across all backend projects</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">RabbitMQ</span>
+              <span class="tech-pill">Swagger</span>
+              <span class="tech-pill">Gradle</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Earlier -->
+        <article class="timeline-item reveal" aria-label="Earlier roles">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card timeline-card-condensed">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company" data-i18n="exp.earlier.company">Earlier Roles</h3>
+                <p class="timeline-role" data-i18n="exp.earlier.role">Contract Engineer &amp; Game Client Programmer</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period" data-i18n="exp.earlier.period">2002 — 2021</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.earlier.b1" data-i18n-html><strong>Contract (2018–2021):</strong> Mobile payment APIs (Suica), Video Management (NEC/C#), Live streaming (PHP/Laravel)</li>
+              <li data-i18n="exp.earlier.b2" data-i18n-html><strong>Game Dev (2002–2018):</strong> 16 years C++/C#/Unity across multiple studios — gameplay &amp; performance</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt" aria-labelledby="proj-heading">
+    <div class="container">
+      <div class="section-label" data-i18n="proj.label">// selected projects</div>
+      <h2 id="proj-heading" class="section-title" data-i18n="proj.title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <!-- perapera.me -->
+        <article class="project-card reveal" aria-label="perapera.me">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">&#127471;&#127477;</div>
+            <div class="project-links">
+              <a href="https://perapera.me" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit perapera.me">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span data-i18n="proj.live">Live</span>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">perapera.me</h3>
+          <p class="project-subtitle" data-i18n="proj.pera.subtitle">High-Performance Japanese Learning Ecosystem</p>
+          <p class="project-desc" data-i18n="proj.pera.desc">A hybrid multi-service platform with Meilisearch powering search across millions of records. Features a multi-tier AI fallback architecture and Stripe subscriptions.</p>
+          <ul class="project-highlights">
+            <li data-i18n="proj.pera.h1">&#128269; Meilisearch for millions of records</li>
+            <li data-i18n="proj.pera.h2">&#128737; Resilient multi-tier LLM fallback</li>
+            <li data-i18n="proj.pera.h3">&#128179; Stripe subscription integration</li>
+            <li data-i18n="proj.pera.h4">&#128640; CI/CD to Azure &amp; Railway</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Convex</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Meilisearch</span>
+            <span class="tech-pill">Stripe</span>
+            <span class="tech-pill">Azure</span>
+          </div>
+        </article>
+
+        <!-- Jessie Signal -->
+        <article class="project-card reveal" aria-label="Jessie Signal">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true">&#128200;</div>
+            <div class="project-links">
+              <a href="https://jessiesignal.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit jessiesignal.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span data-i18n="proj.live">Live</span>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Jessie Signal</h3>
+          <p class="project-subtitle" data-i18n="proj.jessie.subtitle">Real-Time Market Sentiment Dashboard</p>
+          <p class="project-desc"    data-i18n="proj.jessie.desc">A React/Convex serverless web app aggregating live market data (VIX, CNN Fear &amp; Greed, major ETFs) and classifying the market into actionable sentiment scenarios.</p>
+          <ul class="project-highlights">
+            <li data-i18n="proj.jessie.h1">&#128202; VIX + Fear &amp; Greed live data</li>
+            <li data-i18n="proj.jessie.h2">&#128276; Email alerts on scenario changes</li>
+            <li data-i18n="proj.jessie.h3">&#9889; Server-side caching for instant loads</li>
+            <li data-i18n="proj.jessie.h4">&#128272; Gated admin dashboard (Clerk auth)</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Convex</span>
+            <span class="tech-pill">Clerk</span>
+            <span class="tech-pill">Resend</span>
+            <span class="tech-pill">Railway</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-label" data-i18n="contact.label">// get in touch</div>
+      <h2 id="contact-heading" class="section-title" data-i18n="contact.title">Let's Work Together</h2>
+      <p class="contact-desc" data-i18n="contact.desc">Currently based in Tokyo, Japan. Open to backend engineering opportunities, consulting, and interesting side projects.</p>
+      <div class="contact-cards">
+        <a href="mailto:kidyuan@foxmail.com" class="contact-card reveal" id="contact-email" aria-label="Send email to Yuan Genggeng">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact-label" data-i18n="contact.email.label">Email</div>
+            <div class="contact-value">kidyuan@foxmail.com</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">&#8594;</div>
+        </a>
+        <a href="tel:+8107040175377" class="contact-card reveal" id="contact-phone" aria-label="Call Yuan Genggeng">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 5.54 5.54l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label" data-i18n="contact.phone.label">Phone</div>
+            <div class="contact-value">070-4017-5377</div>
+          </div>
+          <div class="contact-arrow" aria-hidden="true">&#8594;</div>
+        </a>
+        <div class="contact-card reveal" id="contact-location" tabindex="0">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-label"  data-i18n="contact.location.label">Location</div>
+            <div class="contact-value"  data-i18n="contact.location.value">Tokyo, Japan</div>
+          </div>
+          <div class="contact-visa">
+            <span data-i18n="contact.visa">Visa: Engineer / Specialist (3yr)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name" data-i18n="footer.name" data-i18n-html>Yuan Genggeng</p>
+        <p class="footer-copy" data-i18n="footer.copy">Built with vanilla HTML, CSS &amp; JS &bull; Tokyo 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
