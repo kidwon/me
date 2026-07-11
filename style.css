@@ -934,11 +934,14 @@ img { display: block; max-width: 100%; }
    ============================================ */
 @media (max-width: 900px) {
   .nav-links { display: none; }
-  .lang-switcher { display: none; }
   .mobile-menu-btn { display: flex; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-cards { grid-template-columns: 1fr; }
+  /* Keep lang-switcher always visible in navbar */
+  .lang-switcher { display: flex; }
+  /* Hide the duplicate inside hamburger menu */
+  .mobile-lang-switcher { display: none; }
 }
 @media (max-width: 640px) {
   .section { padding: 5rem 0; }
