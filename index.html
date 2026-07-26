@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuan Genggeng — Senior Backend Engineer</title>
-  <meta name="description" content="Senior Backend Engineer with 6+ years in distributed systems. Based in Tokyo, Japan." />
-  <meta name="keywords" content="Backend Engineer, Kotlin, Java, Spring Boot, Tokyo, Software Developer, Yuan Genggeng" />
+  <meta name="description" content="Senior Backend Engineer with 6+ years in distributed systems, specializing in the Spring Ecosystem. Based in Tokyo, Japan." />
+  <meta name="keywords" content="Backend Engineer, Kotlin, Java, Spring Boot, Spring MVC, Tokyo, Software Developer, Yuan Genggeng" />
   <meta property="og:title" content="Yuan Genggeng — Senior Backend Engineer" />
-  <meta property="og:description" content="Senior Backend Engineer specializing in distributed systems, Kotlin/Java ecosystems, and AI-augmented workflows." />
+  <meta property="og:description" content="Senior Backend Engineer specializing in the Spring Ecosystem, distributed systems, and AI-augmented workflows." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=20260726c" />
 </head>
 <body>
   <!-- Navigation -->
   <nav id="navbar" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Go to top">YG</a>
+      <a href="#hero" class="nav-logo" aria-label="Go to top">袁</a>
       <ul class="nav-links" role="list">
         <li><a href="#about"      class="nav-link" data-i18n="nav.about">About</a></li>
         <li><a href="#skills"     class="nav-link" data-i18n="nav.skills">Skills</a></li>
@@ -53,30 +53,37 @@
 
   <!-- Hero Section -->
   <section id="hero" aria-label="Introduction">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-      <div class="hero-orb orb-1" aria-hidden="true"></div>
-      <div class="hero-orb orb-2" aria-hidden="true"></div>
-      <div class="hero-orb orb-3" aria-hidden="true"></div>
-    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot" aria-hidden="true"></span>
-        <span data-i18n="hero.badge">Available for opportunities</span>
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span data-i18n="hero.badge">Available for opportunities</span>
+        </div>
+        <div class="hero-heading">
+          <h1 class="hero-name" data-i18n="hero.name" data-i18n-html>Yuan<br /><span class="name-accent">Genggeng</span></h1>
+          <span class="hero-seal" aria-hidden="true">袁</span>
+        </div>
+        <p class="hero-title" data-i18n="hero.title">Senior Backend Engineer</p>
+        <p class="hero-sub"   data-i18n="hero.sub">6+ yrs distributed systems &middot; Spring Ecosystem &middot; Tokyo</p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary" data-i18n="hero.cta.primary">View Experience</a>
+          <a href="#contact"    class="btn btn-ghost"   data-i18n="hero.cta.ghost">Get In Touch</a>
+        </div>
       </div>
-      <h1 class="hero-name" data-i18n="hero.name" data-i18n-html>Yuan <span class="text-gradient">Genggeng</span></h1>
-      <p class="hero-title" data-i18n="hero.title">Senior Backend Engineer</p>
-      <p class="hero-sub"   data-i18n="hero.sub">6+ years in large-scale distributed systems &bull; Java/Kotlin &bull; Tokyo, Japan</p>
-      <div class="hero-tags" role="list" aria-label="Key technologies">
-        <span class="tag" role="listitem" data-i18n="hero.tag1">Java / Kotlin</span>
-        <span class="tag" role="listitem" data-i18n="hero.tag2">Spring Boot</span>
-        <span class="tag" role="listitem" data-i18n="hero.tag3">Distributed Systems</span>
-        <span class="tag" role="listitem" data-i18n="hero.tag4">Next.js</span>
-        <span class="tag" role="listitem" data-i18n="hero.tag5">AI-Augmented Dev</span>
-      </div>
-      <div class="hero-actions">
-        <a href="#experience" class="btn btn-primary" data-i18n="hero.cta.primary">View Experience</a>
-        <a href="#contact"    class="btn btn-ghost"   data-i18n="hero.cta.ghost">Get In Touch</a>
+      <div class="hero-diff" aria-label="Career highlights, presented as a code diff">
+        <div class="diff-head">
+          <span class="diff-file">legacy_modernization.diff</span>
+          <span class="diff-stat"><span class="plus">+2</span> <span class="minus">&minus;2</span></span>
+        </div>
+        <div class="diff-body">
+          <p class="diff-hunk" data-i18n="hero.diff.h1">@@ insurance core — NTT DATA @@</p>
+          <p class="diff-line del">- Struts 1.x &middot; JDK 1.7 &middot; Oracle 11g</p>
+          <p class="diff-line add">+ Spring MVC &middot; JDK 17 &middot; Oracle 18c</p>
+          <p class="diff-hunk" data-i18n="hero.diff.h2">@@ membership DB — Rakuten @@</p>
+          <p class="diff-line del">- Couchbase</p>
+          <p class="diff-line add">+ Cassandra &middot; 300M records</p>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-hint" aria-hidden="true">
@@ -96,7 +103,7 @@
             Senior Backend Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, backed by a <strong>20-year foundation</strong> in software development.
           </p>
           <p data-i18n="about.p1" data-i18n-html>
-            Extensive hands-on experience with <strong>Java/Kotlin</strong> ecosystems and <strong>Spring Boot</strong>. Strong background in Legacy Modernization within the insurance sector and large-scale data migration for e-commerce platforms.
+            Strong expertise in the <strong>Spring Ecosystem</strong> (Spring Boot, Spring MVC, Spring Data) and cloud-native backends. Experienced in <strong>Legacy Modernization</strong> — migrating legacy enterprise applications to modern Spring frameworks — and high-concurrency database migrations.
           </p>
           <p data-i18n="about.p2" data-i18n-html>
             Proficient in modern full-stack development (<strong>Next.js / Convex / FastAPI</strong>) and highly efficient in <strong>AI-augmented workflows</strong> using Claude Code, Codex, and Antigravity.
@@ -149,45 +156,55 @@
       <h2 id="skills-heading" class="section-title" data-i18n="skills.title">What I Work With</h2>
       <div class="skills-grid">
         <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#9881;&#65039;</div>
+          <h3 class="skill-card-title" data-i18n="skills.spring.title">Spring Ecosystem</h3>
+          <div class="skill-tags">
+            <span class="stag stag-primary">Spring Boot (2.x/3.x)</span>
+            <span class="stag stag-primary">Spring MVC</span>
+            <span class="stag">Spring Security</span>
+            <span class="stag">Spring Data JPA/MyBatis</span>
+            <span class="stag">Spring Core (DI/IoC)</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" tabindex="0">
           <h3 class="skill-card-title" data-i18n="skills.backend.title">Backend Development</h3>
           <div class="skill-tags">
             <span class="stag stag-primary">Java</span>
             <span class="stag stag-primary">Kotlin</span>
             <span class="stag stag-primary">Python (FastAPI)</span>
-            <span class="stag">Spring Boot</span>
+            <span class="stag">Go</span>
+            <span class="stag">Microservices</span>
             <span class="stag">DDD</span>
             <span class="stag">RESTful APIs</span>
             <span class="stag">Vert.x</span>
           </div>
         </div>
         <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#128269;</div>
           <h3 class="skill-card-title" data-i18n="skills.search.title">Search &amp; Data</h3>
           <div class="skill-tags">
             <span class="stag stag-primary">Meilisearch</span>
             <span class="stag stag-primary">Kafka (CDC)</span>
             <span class="stag">Cassandra</span>
             <span class="stag">Couchbase</span>
+            <span class="stag">Snowflake</span>
             <span class="stag">Oracle</span>
             <span class="stag">Redis</span>
             <span class="stag">RabbitMQ</span>
           </div>
         </div>
         <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#9729;&#65039;</div>
           <h3 class="skill-card-title" data-i18n="skills.cloud.title">Cloud &amp; DevOps</h3>
           <div class="skill-tags">
             <span class="stag stag-primary">Azure (AKS)</span>
             <span class="stag stag-primary">Railway</span>
             <span class="stag">AWS</span>
             <span class="stag">Docker</span>
+            <span class="stag">Podman</span>
             <span class="stag">Minikube</span>
             <span class="stag">GitHub Actions</span>
+            <span class="stag">GitLab CI/CD</span>
           </div>
         </div>
         <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#129302;</div>
           <h3 class="skill-card-title" data-i18n="skills.ai.title">AI Tools</h3>
           <div class="skill-tags">
             <span class="stag stag-primary">Claude Code</span>
@@ -198,7 +215,6 @@
           </div>
         </div>
         <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#127760;</div>
           <h3 class="skill-card-title" data-i18n="skills.frontend.title">Frontend &amp; Full-Stack</h3>
           <div class="skill-tags">
             <span class="stag stag-primary">Next.js</span>
@@ -207,21 +223,6 @@
             <span class="stag">Convex</span>
             <span class="stag">Tailwind CSS</span>
             <span class="stag">TypeScript</span>
-          </div>
-        </div>
-        <div class="skill-card reveal" tabindex="0">
-          <div class="skill-icon" aria-hidden="true">&#128187;</div>
-          <h3 class="skill-card-title" data-i18n="skills.langs.title">Languages</h3>
-          <div class="skill-tags">
-            <span class="stag stag-primary">Kotlin</span>
-            <span class="stag stag-primary">Java</span>
-            <span class="stag">Python</span>
-            <span class="stag">TypeScript</span>
-            <span class="stag">C#</span>
-            <span class="stag">PHP</span>
-            <span class="stag">Go</span>
-            <span class="stag">Rust</span>
-            <span class="stag">C++</span>
           </div>
         </div>
       </div>
@@ -244,7 +245,6 @@
                 <h3 class="timeline-company">NTT DATA</h3>
                 <p class="timeline-role">
                   <span data-i18n="exp.ntt.role">Contract Backend Engineer</span>
-                  <span class="via" data-i18n="exp.ntt.via">(via Staffing Agency)</span>
                 </p>
               </div>
               <div class="timeline-meta">
@@ -254,16 +254,20 @@
               </div>
             </div>
             <div class="timeline-project">
-              <span class="project-tag" data-i18n="exp.ntt.project">Insurance System Modernization</span>
+              <span class="project-tag" data-i18n="exp.ntt.project">Insurance System Modernization (Struts &rarr; Spring)</span>
             </div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp.ntt.b1" data-i18n-html>Migrating a <strong>legacy insurance core system</strong> from Struts 1.x / JDK 1.7 to <strong>Spring MVC / JDK 17</strong></li>
+              <li data-i18n="exp.ntt.b1" data-i18n-html>Modernizing a <strong>core insurance application</strong> from TERASOLUNA 2.2.0 (Struts 1.x) / JDK 1.7 to <strong>TERASOLUNA 5.x (Spring MVC) / JDK 17</strong></li>
+              <li data-i18n="exp.ntt.b2" data-i18n-html><strong>Phase 1:</strong> Refactored legacy <strong>JSP</strong> templates and intra-mart custom tags to improve front-end usability</li>
+              <li data-i18n="exp.ntt.b3" data-i18n-html><strong>Phase 2:</strong> Refactored business logic into clean, decoupled, testable <strong>Spring-managed beans</strong> using Dependency Injection</li>
             </ul>
             <div class="timeline-tech">
               <span class="tech-pill">Java 17</span>
               <span class="tech-pill">Spring MVC</span>
+              <span class="tech-pill">TERASOLUNA 5.x</span>
+              <span class="tech-pill">intra-mart</span>
+              <span class="tech-pill">JSP</span>
               <span class="tech-pill">Oracle</span>
-              <span class="tech-pill">TERASOLUNA</span>
             </div>
           </div>
         </article>
@@ -275,7 +279,7 @@
             <div class="timeline-header">
               <div>
                 <h3 class="timeline-company">Rakuten Group, Inc.</h3>
-                <p class="timeline-role" data-i18n="exp.rakuten.role">Backend Engineer</p>
+                <p class="timeline-role" data-i18n="exp.rakuten.role">Contract Backend Engineer</p>
               </div>
               <div class="timeline-meta">
                 <span class="timeline-period" data-i18n="exp.rakuten.period">Sep 2021 — Mar 2025</span>
@@ -286,30 +290,34 @@
               <span class="project-tag" data-i18n="exp.rakuten.project1">Membership System &amp; Database Migration</span>
             </div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp.rakuten.b1" data-i18n-html>Refactored Java-based membership APIs into <strong>Kotlin/Vert.x</strong> services using DDD principles</li>
-              <li data-i18n="exp.rakuten.b2" data-i18n-html>Migrated Couchbase to <strong>Cassandra</strong> using <strong>Kafka-based CDC</strong> for real-time sync</li>
-              <li data-i18n="exp.rakuten.b3" data-i18n-html>Performance tested with <strong>Gatling</strong> across <strong>300 million records</strong></li>
+              <li data-i18n="exp.rakuten.m1" data-i18n-html>Ran a high-concurrency <strong>PoC</strong> on Couchbase, generating <strong>300 million</strong> mock membership records for benchmarking</li>
+              <li data-i18n="exp.rakuten.m2" data-i18n-html>Executed the migration from Couchbase to <strong>Cassandra</strong> after stress tests revealed degradation during node rebalancing</li>
+              <li data-i18n="exp.rakuten.m3" data-i18n-html>Built an async <strong>Vert.x</strong> benchmarking API server and ran distributed <strong>Gatling</strong> stress tests via GitLab CI/CD</li>
+              <li data-i18n="exp.rakuten.m4" data-i18n-html>Packaged a custom <strong>Argon2</strong> hashing library and automated API test suites with <strong>Postman/Newman</strong> on MiniKube</li>
             </ul>
             <div class="timeline-tech">
               <span class="tech-pill">Kotlin</span>
+              <span class="tech-pill">Spring Boot</span>
               <span class="tech-pill">Vert.x</span>
               <span class="tech-pill">Cassandra</span>
-              <span class="tech-pill">Kafka</span>
+              <span class="tech-pill">Couchbase</span>
               <span class="tech-pill">Gatling</span>
-              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">GitLab CI/CD</span>
             </div>
             <div class="timeline-project" style="margin-top:1.25rem">
-              <span class="project-tag" data-i18n="exp.rakuten.project2">Rakuten Fashion (E-commerce)</span>
+              <span class="project-tag" data-i18n="exp.rakuten.project2">Rakuten Fashion — Agency Order Management</span>
             </div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp.rakuten.b4" data-i18n-html>Built batch systems with <strong>Spring Boot + RabbitMQ</strong> for automated order error handling</li>
-              <li data-i18n="exp.rakuten.b5" data-i18n-html>Standardized API specs with <strong>Swagger (OpenAPI)</strong> across all backend projects</li>
+              <li data-i18n="exp.rakuten.f1" data-i18n-html>Built <strong>Spring Boot @Scheduled</strong> batch tasks with <strong>RabbitMQ</strong> to route stalled orders back for asynchronous re-processing</li>
+              <li data-i18n="exp.rakuten.f2" data-i18n-html>Streamlined <strong>Gradle</strong> builds and API version management across microservices with <strong>JFrog Artifactory</strong></li>
+              <li data-i18n="exp.rakuten.f3" data-i18n-html>Standardized API specs with <strong>OpenAPI (Swagger)</strong> across all backend services</li>
             </ul>
             <div class="timeline-tech">
               <span class="tech-pill">Spring Boot</span>
               <span class="tech-pill">RabbitMQ</span>
-              <span class="tech-pill">Swagger</span>
               <span class="tech-pill">Gradle</span>
+              <span class="tech-pill">JFrog Artifactory</span>
+              <span class="tech-pill">Swagger</span>
             </div>
           </div>
         </article>
@@ -321,15 +329,16 @@
             <div class="timeline-header">
               <div>
                 <h3 class="timeline-company" data-i18n="exp.earlier.company">Earlier Roles</h3>
-                <p class="timeline-role" data-i18n="exp.earlier.role">Contract Engineer &amp; Game Client Programmer</p>
+                <p class="timeline-role" data-i18n="exp.earlier.role">Software Engineer &amp; Game Client Programmer</p>
               </div>
               <div class="timeline-meta">
                 <span class="timeline-period" data-i18n="exp.earlier.period">2002 — 2021</span>
               </div>
             </div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp.earlier.b1" data-i18n-html><strong>Contract (2018–2021):</strong> Mobile payment APIs (Suica), Video Management (NEC/C#), Live streaming (PHP/Laravel)</li>
-              <li data-i18n="exp.earlier.b2" data-i18n-html><strong>Game Dev (2002–2018):</strong> 16 years C++/C#/Unity across multiple studios — gameplay &amp; performance</li>
+              <li data-i18n="exp.earlier.b1" data-i18n-html><strong>Techoes, Tokyo (2020–2021):</strong> Multiplayer game backend — online chat &amp; AI pathfinding with <strong>Go, gRPC, Protobuf</strong>; live streaming platform (Vue.js, PHP/Laravel)</li>
+              <li data-i18n="exp.earlier.b2" data-i18n-html><strong>NEC, Tokyo (2018–2019):</strong> VMS integrations for the National Police Agency (<strong>C# / Milestone XProtect</strong>); Mobile Suica backend APIs &amp; batch tasks</li>
+              <li data-i18n="exp.earlier.b3" data-i18n-html><strong>Game Dev, Shanghai (2003–2018):</strong> Client-side development in <strong>C++/C#/Unity/Unreal</strong> across studios incl. 2K Games China — combat systems, UI frameworks, performance optimization</li>
             </ul>
           </div>
         </article>
@@ -345,9 +354,9 @@
       <div class="projects-grid">
 
         <!-- perapera.me -->
-        <article class="project-card reveal" aria-label="perapera.me">
+        <article class="project-card reveal" aria-label="PeraPera">
           <div class="project-header">
-            <div class="project-icon" aria-hidden="true">&#127471;&#127477;</div>
+            <div class="project-icon" aria-hidden="true"><img src="assets/perapera.png" alt="" width="46" height="46" loading="lazy" /></div>
             <div class="project-links">
               <a href="https://perapera.me" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit perapera.me">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -355,7 +364,7 @@
               </a>
             </div>
           </div>
-          <h3 class="project-title">perapera.me</h3>
+          <h3 class="project-title">PeraPera</h3>
           <p class="project-subtitle" data-i18n="proj.pera.subtitle">High-Performance Japanese Learning Ecosystem</p>
           <p class="project-desc" data-i18n="proj.pera.desc">A hybrid multi-service platform with Meilisearch powering search across millions of records. Features a multi-tier AI fallback architecture and Stripe subscriptions.</p>
           <ul class="project-highlights">
@@ -374,10 +383,40 @@
           </div>
         </article>
 
+        <!-- PeraTube -->
+        <article class="project-card reveal" aria-label="PeraTube">
+          <div class="project-header">
+            <div class="project-icon" aria-hidden="true"><img src="assets/peratube.png" alt="" width="46" height="46" loading="lazy" /></div>
+            <div class="project-links">
+              <a href="https://peratube.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit peratube.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span data-i18n="proj.live">Live</span>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">PeraTube</h3>
+          <p class="project-subtitle" data-i18n="proj.tube.subtitle">Japanese Video Example-Sentence Search API</p>
+          <p class="project-desc" data-i18n="proj.tube.desc">A developer-facing SaaS that indexes massive YouTube subtitle corpora into searchable segments — query how Japanese is actually used in real videos, with millisecond latency and quota-based billing.</p>
+          <ul class="project-highlights">
+            <li data-i18n="proj.tube.h1">&#128270; Millisecond search over subtitle segments</li>
+            <li data-i18n="proj.tube.h2">&#128273; API keys &middot; atomic quota billing via Convex</li>
+            <li data-i18n="proj.tube.h3">&#128179; Stripe subscriptions + credit packs</li>
+            <li data-i18n="proj.tube.h4">&#129514; 15+ pytest suites &middot; Railway + Cloudflare</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Convex</span>
+            <span class="tech-pill">Meilisearch</span>
+            <span class="tech-pill">Stripe</span>
+            <span class="tech-pill">Railway</span>
+          </div>
+        </article>
+
         <!-- Jessie Signal -->
         <article class="project-card reveal" aria-label="Jessie Signal">
           <div class="project-header">
-            <div class="project-icon" aria-hidden="true">&#128200;</div>
+            <div class="project-icon" aria-hidden="true"><img src="assets/jessiesignal.svg" alt="" width="46" height="46" loading="lazy" /></div>
             <div class="project-links">
               <a href="https://jessiesignal.com" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visit jessiesignal.com">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -459,7 +498,7 @@
     </div>
   </footer>
 
-  <script src="i18n.js"></script>
-  <script src="script.js"></script>
+  <script src="i18n.js?v=20260726c"></script>
+  <script src="script.js?v=20260726c"></script>
 </body>
 </html>
