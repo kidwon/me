@@ -5,9 +5,9 @@ import { useI18n, type Lang } from "@/lib/i18n";
 
 const NAV_ITEMS = [
   ["#about", "nav.about"],
+  ["#projects", "nav.projects"],
   ["#skills", "nav.skills"],
   ["#experience", "nav.experience"],
-  ["#projects", "nav.projects"],
   ["#contact", "nav.contact"],
 ] as const;
 
