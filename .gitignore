@@ -1,6 +1,23 @@
+# personal working files (not for the public repo / deployed site)
 resume_*.md
 interview-walkthrough.md
+snowflake-showcase-plan.md
 /jessiesignal.svg
 /perapera-logo.png
 /peratube.png
+
+# next.js
+/node_modules
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env*.local
+
+# misc
 .DS_Store
+.vercel
