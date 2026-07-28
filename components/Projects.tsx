@@ -63,7 +63,13 @@ export default function Projects() {
               <div className="project-header">
                 <div className="project-icon" aria-hidden="true">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={p.icon} alt="" width={46} height={46} loading="lazy" />
+                  <img
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${p.icon}`}
+                    alt=""
+                    width={46}
+                    height={46}
+                    loading="lazy"
+                  />
                 </div>
                 <div className="project-links">
                   <a

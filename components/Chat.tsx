@@ -5,6 +5,13 @@ import { DefaultChatTransport } from "ai";
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 
+// Convex serves HTTP actions on .convex.site (the .convex.cloud URL is for
+// queries/mutations); NEXT_PUBLIC_CONVEX_URL is baked in at build time.
+const CONVEX_SITE_URL = (process.env.NEXT_PUBLIC_CONVEX_URL ?? "").replace(
+  /\.convex\.cloud$/,
+  ".convex.site",
+);
+
 export default function Chat() {
   const { lang, t } = useI18n();
   const [open, setOpen] = useState(false);
@@ -12,7 +19,7 @@ export default function Chat() {
   const messagesRef = useRef<HTMLDivElement>(null);
 
   const { messages, sendMessage, status, error } = useChat({
-    transport: new DefaultChatTransport({ api: "/api/chat" }),
+    transport: new DefaultChatTransport({ api: `${CONVEX_SITE_URL}/api/chat` }),
   });
 
   const busy = status === "streaming" || status === "submitted";

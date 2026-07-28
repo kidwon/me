@@ -11,6 +11,7 @@
     "@ai-sdk/deepseek": "latest",
     "@ai-sdk/react": "latest",
     "ai": "latest",
+    "convex": "^1.42.3",
     "next": "^15",
     "react": "^19",
     "react-dom": "^19",

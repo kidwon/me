@@ -1,12 +1,8 @@
 import { createDeepSeek } from "@ai-sdk/deepseek";
 import { convertToModelMessages, streamText, type UIMessage } from "ai";
-
-export const runtime = "nodejs";
-export const maxDuration = 30;
-
-const deepseek = createDeepSeek({
-  apiKey: process.env.DEEPSEEK_API_KEY,
-});
+import { httpRouter } from "convex/server";
+import { internal } from "./_generated/api";
+import { httpAction } from "./_generated/server";
 
 /*
  * Grounding profile for the assistant. Kept in English (the model translates);
@@ -94,27 +90,26 @@ const MAX_INPUT_CHARS = 4000;
 const RATE_LIMIT_WINDOW_MS = 5 * 60 * 1000;
 const RATE_LIMIT_MAX_REQUESTS = 10;
 
-// Best-effort per-instance limiter; swap for Upstash/KV if traffic gets adversarial.
-const rateLimitStore = new Map<string, number[]>();
+const ALLOWED_ORIGINS = [
+  "https://kidwon.github.io",
+  "http://localhost:3000",
+];
 
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const timestamps = (rateLimitStore.get(ip) ?? []).filter(
-    (t) => now - t < RATE_LIMIT_WINDOW_MS,
-  );
-  if (timestamps.length >= RATE_LIMIT_MAX_REQUESTS) {
-    rateLimitStore.set(ip, timestamps);
-    return true;
-  }
-  timestamps.push(now);
-  rateLimitStore.set(ip, timestamps);
-  return false;
+function corsHeaders(origin: string | null): Record<string, string> {
+  const allowed = origin && ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    "Access-Control-Allow-Origin": allowed,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    Vary: "Origin",
+  };
 }
 
-function getClientIp(req: Request): string {
-  const forwardedFor = req.headers.get("x-forwarded-for");
-  if (forwardedFor) return forwardedFor.split(",")[0].trim();
-  return "unknown";
+function errorResponse(origin: string | null, message: string, status: number) {
+  return new Response(JSON.stringify({ error: message }), {
+    status,
+    headers: { "Content-Type": "application/json", ...corsHeaders(origin) },
+  });
 }
 
 const LANG_NAMES: Record<string, string> = {
@@ -128,25 +123,30 @@ interface ChatRequestBody {
   lang?: string;
 }
 
-export async function POST(req: Request) {
-  const ip = getClientIp(req);
-  if (isRateLimited(ip)) {
-    return Response.json(
-      { error: "Too many requests. Please wait and try again." },
-      { status: 429 },
-    );
+const chat = httpAction(async (ctx, req) => {
+  const origin = req.headers.get("Origin");
+
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "unknown";
+  const allowed = await ctx.runMutation(internal.rateLimit.check, {
+    key: ip,
+    windowMs: RATE_LIMIT_WINDOW_MS,
+    maxRequests: RATE_LIMIT_MAX_REQUESTS,
+  });
+  if (!allowed) {
+    return errorResponse(origin, "Too many requests. Please wait and try again.", 429);
   }
 
   let body: ChatRequestBody;
   try {
     body = await req.json();
   } catch {
-    return Response.json({ error: "Invalid JSON" }, { status: 400 });
+    return errorResponse(origin, "Invalid JSON", 400);
   }
 
   const { messages, lang } = body;
   if (!Array.isArray(messages) || messages.length === 0) {
-    return Response.json({ error: "messages required" }, { status: 400 });
+    return errorResponse(origin, "messages required", 400);
   }
 
   const totalChars = messages.reduce((sum, m) => {
@@ -157,10 +157,7 @@ export async function POST(req: Request) {
     return sum + text.length;
   }, 0);
   if (totalChars > MAX_INPUT_CHARS) {
-    return Response.json(
-      { error: `Input too long (max ${MAX_INPUT_CHARS} chars).` },
-      { status: 400 },
-    );
+    return errorResponse(origin, `Input too long (max ${MAX_INPUT_CHARS} chars).`, 400);
   }
 
   const trimmed = messages.slice(-MAX_HISTORY_MESSAGES);
@@ -169,6 +166,10 @@ export async function POST(req: Request) {
     ? ` The site is currently displayed in ${langName}; default to answering in ${langName} unless the visitor writes in another language — then match the visitor's language.`
     : "";
 
+  const deepseek = createDeepSeek({
+    apiKey: process.env.DEEPSEEK_API_KEY,
+  });
+
   const result = streamText({
     model: deepseek("deepseek-chat"),
     system: SYSTEM_PROMPT + langInstruction,
@@ -176,5 +177,31 @@ export async function POST(req: Request) {
     maxOutputTokens: 1000,
   });
 
-  return result.toUIMessageStreamResponse();
-}
+  const response = result.toUIMessageStreamResponse();
+  const headers = new Headers(response.headers);
+  for (const [k, v] of Object.entries(corsHeaders(origin))) {
+    headers.set(k, v);
+  }
+  return new Response(response.body, { status: response.status, headers });
+});
+
+const http = httpRouter();
+
+http.route({
+  path: "/api/chat",
+  method: "POST",
+  handler: chat,
+});
+
+http.route({
+  path: "/api/chat",
+  method: "OPTIONS",
+  handler: httpAction(async (_ctx, req) => {
+    return new Response(null, {
+      status: 204,
+      headers: corsHeaders(req.headers.get("Origin")),
+    });
+  }),
+});
+
+export default http;
