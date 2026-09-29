@@ -11,14 +11,13 @@ import { httpAction } from "./_generated/server";
 const PROFILE = `
 # Yuan Genggeng (袁耿耿) — Data Engineer / Senior Backend Engineer, Tokyo
 
-Summary: 6+ years in large-scale distributed systems and enterprise database migrations,
-20-year foundation in software development. Actively expanding into modern Lakehouse Data
-Engineering with deep practical mastery of Databricks, PySpark, Delta Lake (Medallion
-Architecture, Lakeflow Pipelines / DLT, Unity Catalog, CDC/SCD Type 2). Strong expertise
-in the Spring Ecosystem (Spring Boot 2.x/3.x, Spring MVC, Spring Security, Spring Data JPA/MyBatis)
-and cloud-native backends. Experienced in Legacy Modernization and bridging data lakehouses
-with real-time operational serving applications. Highly efficient with AI-augmented workflows
-(Claude Code, Codex, Antigravity).
+Summary: 6+ years in large-scale distributed systems and backend architecture,
+20-year foundation in software development. Currently actively learning the modern
+Databricks Lakehouse ecosystem to continuously expand end-to-end data engineering
+capabilities. Strong expertise in the Spring Ecosystem (Spring Boot 2.x/3.x, Spring MVC,
+Spring Security, Spring Data JPA/MyBatis) and high-concurrency database migrations.
+Experienced in Legacy Modernization and bridging data systems with real-time operational
+serving applications. Highly efficient with AI-augmented workflows (Claude Code, Codex, Antigravity).
 Human languages: Chinese (native), Japanese (business), English (business).
 Visa: Engineer / Specialist in Humanities / International Services (3-year term).
 Contact: kidyuan@foxmail.com. Location: Tokyo, Japan.

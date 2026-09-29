@@ -21,7 +21,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     // Meta
     "meta.title": "Yuan Genggeng — Data Engineer / Senior Backend Engineer",
     "meta.desc":
-      "Data Engineer & Senior Backend Engineer with 6+ years in distributed systems, specializing in Lakehouse (Databricks, PySpark, Delta Lake) and Spring. Based in Tokyo, Japan.",
+      "Data Engineer & Senior Backend Engineer with 6+ years in distributed systems, actively expanding into Databricks & Lakehouse data engineering. Based in Tokyo, Japan.",
 
     // Nav
     "nav.about": "About",
@@ -44,9 +44,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// about me",
     "about.title": "Who I Am",
     "about.lead":
-      "Data Engineer & Senior Backend Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, actively expanding into modern <strong>Lakehouse Data Engineering</strong>.",
+      "Senior Backend & Data Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, currently actively learning the modern <strong>Databricks</strong> Lakehouse ecosystem.",
     "about.p1":
-      "Hands-on expertise in <strong>Databricks</strong>, <strong>PySpark</strong>, and <strong>Delta Lake</strong> (Medallion Architecture, Lakeflow Pipelines, Unity Catalog, CDC/SCD Type 2), bridging enterprise lakehouses with real-time operational serving. Backed by a solid foundation in the <strong>Spring Ecosystem</strong> and high-concurrency database migrations.",
+      "Continuously expanding end-to-end data engineering capabilities, backed by a solid foundation in the <strong>Spring Ecosystem</strong>, high-concurrency database migrations, and 20 years of software engineering.",
     "about.p2":
       "Proficient in modern full-stack development (<strong>Next.js / Convex / FastAPI</strong>) and highly efficient in <strong>AI-augmented workflows</strong> using Claude Code, Codex, and Antigravity.",
     "about.lang.zh": "🇨🇳 Chinese",
@@ -178,7 +178,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "hero.name": '袁<span class="name-accent">耿耿</span>',
     "footer.name": "袁 耿耿",
     "meta.desc":
-      "数据工程师与高级后端工程师，深耕现代湖仓体系（Databricks、PySpark、Delta Lake）与大规模分布式系统，现居东京。",
+      "数据工程师与高级后端工程师，拥有6年以上分布式系统经验，积极拓展 Databricks 现代湖仓体系，现居东京。",
 
     // Nav
     "nav.about": "关于我",
@@ -201,9 +201,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// 关于我",
     "about.title": "个人简介",
     "about.lead":
-      "数据工程师与高级后端工程师，在大规模分布式系统领域拥有<strong>6年以上</strong>专业经验，正全面拓展现代<strong>Lakehouse 湖仓数据工程</strong>。",
+      "在大规模分布式系统与后端架构领域拥有<strong>6年以上</strong>专业经验，目前正在深入学习 <strong>Databricks</strong> 现代湖仓体系，持续拓展端到端数据工程能力。",
     "about.p1":
-      "深度实战<strong>Databricks</strong>、<strong>PySpark</strong>与<strong>Delta Lake</strong>（奖牌模型、Lakeflow 声明式管道、Unity Catalog、CDC/SCD Type 2），打通湖仓中枢到亚秒级业务终端。依托深厚的<strong>Spring 生态</strong>、亿级高并发数据库迁移与 20 年软件开发底座。",
+      "依托深厚的<strong>Spring 生态</strong>、亿级高并发数据库迁移与 20 年软件开发底座，探索现代湖仓与高性能业务终端的高效融合。",
     "about.p2":
       "熟练运用现代全栈技术（<strong>Next.js / Convex / FastAPI</strong>），并能高效利用<strong>AI辅助工作流</strong>（Claude Code、Codex、Antigravity）大幅提升开发效率。",
     "about.lang.zh": "🇨🇳 中文",
@@ -333,7 +333,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
       '<ruby>袁<rt>えん</rt></ruby> <span class="name-accent"><ruby>耿耿<rt>こうこう</rt></ruby></span>',
     "footer.name": "袁 耿耿",
     "meta.desc":
-      "レイクハウス（Databricks・PySpark・Delta Lake）および大規模分散システムを専門とするデータエンジニア / シニアバックエンドエンジニア。東京在住。",
+      "大規模分散システムとSpring基盤に強みを持ち、Databricks レイクハウスを積極的に学習・探求中のデータエンジニア / シニアバックエンドエンジニア。東京在住。",
 
     // Nav
     "nav.about": "私について",
@@ -356,9 +356,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// 私について",
     "about.title": "自己紹介",
     "about.lead":
-      "大規模分散システムに<strong>6年以上</strong>の専門経験を持ち、モダンな<strong>レイクハウスデータエンジニアリング</strong>へと領域を広げているデータエンジニア / シニアバックエンドエンジニアです。",
+      "大規模分散システムおよびバックエンド設計において<strong>6年以上</strong>の実務経験を有し、現在は <strong>Databricks</strong> 現代レイクハウス体系を精力的に学習・探求中。",
     "about.p1":
-      "<strong>Databricks</strong>、<strong>PySpark</strong>、<strong>Delta Lake</strong>（メダリオンアーキテクチャ、Lakeflow パイプライン、Unity Catalog、CDC/SCD Type 2）の実践的知見を有し、データレイクと運用系アプリの連携を推進。強固な<strong>Springエコシステム</strong>と高並行DB移行の実績に裏打ちされています。",
+      "エンドツーエンドのデータエンジニアリング力を継続的に拡張しながら、強固な<strong>Springエコシステム</strong>と高並行DB移行実績、20年にわたる開発基盤を活かしてレイクハウスと高パフォーマンス業務システムの融合を追求しています。",
     "about.p2":
       "モダンなフルスタック開発（<strong>Next.js / Convex / FastAPI</strong>）に精通し、Claude Code・Codex・Antigravityを活用した<strong>AI支援ワークフロー</strong>による高速開発を得意としています。",
     "about.lang.zh": "🇨🇳 中国語",
