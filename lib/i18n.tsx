@@ -19,9 +19,9 @@ export type Lang = "en" | "zh" | "ja";
 const TRANSLATIONS: Record<Lang, Record<string, string>> = {
   en: {
     // Meta
-    "meta.title": "Yuan Genggeng — Senior Backend Engineer",
+    "meta.title": "Yuan Genggeng — Data Engineer / Senior Backend Engineer",
     "meta.desc":
-      "Senior Backend Engineer with 6+ years in distributed systems, specializing in the Spring Ecosystem. Based in Tokyo, Japan.",
+      "Data Engineer & Senior Backend Engineer with 6+ years in distributed systems, specializing in Lakehouse (Databricks, PySpark, Delta Lake) and Spring. Based in Tokyo, Japan.",
 
     // Nav
     "nav.about": "About",
@@ -32,8 +32,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
 
     // Hero
     "hero.badge": "Available for opportunities",
-    "hero.title": "Senior Backend Engineer",
-    "hero.sub": "6+ yrs distributed systems · Spring Ecosystem · Tokyo",
+    "hero.title": "Data Engineer / Backend Engineer",
+    "hero.sub": "Databricks & Lakehouse · 6+ yrs distributed systems · Tokyo",
     "hero.diff.h1": "@@ insurance core — NTT DATA @@",
     "hero.diff.h2": "@@ membership DB — Rakuten @@",
     "hero.cta.primary": "View Experience",
@@ -44,9 +44,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// about me",
     "about.title": "Who I Am",
     "about.lead":
-      "Senior Backend Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, backed by a <strong>20-year foundation</strong> in software development.",
+      "Data Engineer & Senior Backend Engineer with <strong>6+ years</strong> of specialized experience in large-scale distributed systems, actively expanding into modern <strong>Lakehouse Data Engineering</strong>.",
     "about.p1":
-      "Strong expertise in the <strong>Spring Ecosystem</strong> (Spring Boot, Spring MVC, Spring Data) and cloud-native backends. Experienced in <strong>Legacy Modernization</strong> — migrating legacy enterprise applications to modern Spring frameworks — and high-concurrency database migrations.",
+      "Hands-on expertise in <strong>Databricks</strong>, <strong>PySpark</strong>, and <strong>Delta Lake</strong> (Medallion Architecture, Lakeflow Pipelines, Unity Catalog, CDC/SCD Type 2), bridging enterprise lakehouses with real-time operational serving. Backed by a solid foundation in the <strong>Spring Ecosystem</strong> and high-concurrency database migrations.",
     "about.p2":
       "Proficient in modern full-stack development (<strong>Next.js / Convex / FastAPI</strong>) and highly efficient in <strong>AI-augmented workflows</strong> using Claude Code, Codex, and Antigravity.",
     "about.lang.zh": "🇨🇳 Chinese",
@@ -62,6 +62,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     // Skills
     "skills.label": "// technical skills",
     "skills.title": "What I Work With",
+    "skills.dataeng.title": "Data Engineering & Lakehouse",
     "skills.spring.title": "Spring Ecosystem",
     "skills.backend.title": "Backend Development",
     "skills.search.title": "Search & Data",
@@ -73,8 +74,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "exp.label": "// work history",
     "exp.title": "Professional Experience",
     "exp.ntt.role": "Contract Backend Engineer",
-    "exp.ntt.period": "Apr 2025 — Present",
-    "exp.ntt.badge": "Current",
+    "exp.ntt.period": "Apr 2025 — Aug 2026",
+    "exp.ntt.badge": "Completed",
     "exp.ntt.project": "Insurance System Modernization (Struts → Spring)",
     "exp.ntt.b1":
       "Modernizing a <strong>core insurance application</strong> from TERASOLUNA 2.2.0 (Struts 1.x) / JDK 1.7 to <strong>TERASOLUNA 5.x (Spring MVC) / JDK 17</strong>",
@@ -114,6 +115,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// selected projects",
     "proj.title": "What I've Built",
     "proj.live": "Live",
+    "proj.helios.subtitle": "Real-Time Lakehouse Operations & Reactive Dashboard",
+    "proj.helios.desc":
+      "An enterprise interplanetary logistics control platform powered by Databricks Lakehouse, Medallion Architecture, and real-time reactive streaming.",
+    "proj.helios.h1": "🛰️ Medallion Architecture (Bronze/Silver/Gold)",
+    "proj.helios.h2": "⚡ Dual pipelines: PySpark Streaming vs. Lakeflow (DLT)",
+    "proj.helios.h3": "🔄 SCD Type 2, CDC replay & window deduplication",
+    "proj.helios.h4": "📡 Metric Views + Lakebase (Postgres) + Convex push",
     "proj.pera.subtitle": "High-Performance Japanese Learning Ecosystem",
     "proj.pera.desc":
       "A hybrid multi-service platform with Meilisearch powering search across millions of records. Features a multi-tier AI fallback architecture and Stripe subscriptions.",
@@ -166,11 +174,11 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
 
   zh: {
     // Meta
-    "meta.title": "袁耿耿 — 高级后端工程师",
+    "meta.title": "袁耿耿 — 数据工程师 / 高级后端工程师",
     "hero.name": '袁<span class="name-accent">耿耿</span>',
     "footer.name": "袁 耿耿",
     "meta.desc":
-      "高级后端工程师，6年以上分布式系统经验，深耕 Spring 生态（Spring Boot/MVC/Data）及AI辅助开发，现居东京。",
+      "数据工程师与高级后端工程师，深耕现代湖仓体系（Databricks、PySpark、Delta Lake）与大规模分布式系统，现居东京。",
 
     // Nav
     "nav.about": "关于我",
@@ -181,8 +189,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
 
     // Hero
     "hero.badge": "开放工作机会",
-    "hero.title": "高级后端工程师",
-    "hero.sub": "6年以上大规模分布式系统经验 · Spring 生态 · 东京",
+    "hero.title": "数据工程师 / 高级后端工程师",
+    "hero.sub": "Databricks 现代湖仓体系 · 6年以上分布式系统经验 · 东京",
     "hero.diff.h1": "@@ 保险核心系统 — NTT DATA @@",
     "hero.diff.h2": "@@ 会员数据库 — 乐天 @@",
     "hero.cta.primary": "查看工作经历",
@@ -193,9 +201,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// 关于我",
     "about.title": "个人简介",
     "about.lead":
-      "高级后端工程师，在大规模分布式系统领域拥有<strong>6年以上</strong>专业经验，整体软件开发经验超过<strong>20年</strong>。",
+      "数据工程师与高级后端工程师，在大规模分布式系统领域拥有<strong>6年以上</strong>专业经验，正全面拓展现代<strong>Lakehouse 湖仓数据工程</strong>。",
     "about.p1":
-      "深度掌握<strong>Spring 生态</strong>（Spring Boot、Spring MVC、Spring Data）与云原生后端开发。在遗留企业系统向现代 Spring 框架的<strong>现代化改造</strong>及高并发数据库迁移方面拥有丰富实战经验。",
+      "深度实战<strong>Databricks</strong>、<strong>PySpark</strong>与<strong>Delta Lake</strong>（奖牌模型、Lakeflow 声明式管道、Unity Catalog、CDC/SCD Type 2），打通湖仓中枢到亚秒级业务终端。依托深厚的<strong>Spring 生态</strong>、亿级高并发数据库迁移与 20 年软件开发底座。",
     "about.p2":
       "熟练运用现代全栈技术（<strong>Next.js / Convex / FastAPI</strong>），并能高效利用<strong>AI辅助工作流</strong>（Claude Code、Codex、Antigravity）大幅提升开发效率。",
     "about.lang.zh": "🇨🇳 中文",
@@ -211,6 +219,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     // Skills
     "skills.label": "// 技术技能",
     "skills.title": "我的技术栈",
+    "skills.dataeng.title": "数据工程与湖仓体系",
     "skills.spring.title": "Spring 生态",
     "skills.backend.title": "后端开发",
     "skills.search.title": "搜索与数据",
@@ -222,8 +231,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "exp.label": "// 工作经历",
     "exp.title": "职业履历",
     "exp.ntt.role": "合同制后端工程师",
-    "exp.ntt.period": "2025年4月 — 至今",
-    "exp.ntt.badge": "在职",
+    "exp.ntt.period": "2025年4月 — 2026年8月",
+    "exp.ntt.badge": "已完成",
     "exp.ntt.project": "保险系统现代化改造（Struts → Spring）",
     "exp.ntt.b1":
       "将<strong>保险核心系统</strong>从 TERASOLUNA 2.2.0 (Struts 1.x) / JDK 1.7 现代化迁移至<strong>TERASOLUNA 5.x (Spring MVC) / JDK 17</strong>",
@@ -263,6 +272,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// 精选项目",
     "proj.title": "我的作品",
     "proj.live": "访问",
+    "proj.helios.subtitle": "太阳系物流实时湖仓运营管控中心",
+    "proj.helios.desc":
+      "基于 Databricks Lakehouse 湖仓底座、规范奖牌模型（Medallion Architecture）与反应式流式分发的星际物流指挥大屏。",
+    "proj.helios.h1": "🛰️ 规范奖牌数据架构（Bronze / Silver / Gold）",
+    "proj.helios.h2": "⚡ 双范式管道：PySpark 流批一体 vs. Lakeflow 声明式管道",
+    "proj.helios.h3": "🔄 慢变化维（SCD Type 2）、乱序 CDC 与窗口去重",
+    "proj.helios.h4": "📡 统一语义层 Metric Views + Lakebase + Convex 实时流式分发",
     "proj.pera.subtitle": "高性能日语学习生态系统",
     "proj.pera.desc":
       "基于混合多服务架构，使用 Meilisearch 在百万级数据上实现高性能搜索，集成多层 AI 降级架构与 Stripe 订阅支付。",
@@ -312,12 +328,12 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
 
   ja: {
     // Meta
-    "meta.title": "袁耿耿 — シニアバックエンドエンジニア",
+    "meta.title": "袁耿耿 — データエンジニア / シニアバックエンドエンジニア",
     "hero.name":
       '<ruby>袁<rt>えん</rt></ruby> <span class="name-accent"><ruby>耿耿<rt>こうこう</rt></ruby></span>',
     "footer.name": "袁 耿耿",
     "meta.desc":
-      "6年以上の分散システム経験を持つシニアバックエンドエンジニア。Springエコシステム（Spring Boot/MVC/Data）を専門とし、東京在住。",
+      "レイクハウス（Databricks・PySpark・Delta Lake）および大規模分散システムを専門とするデータエンジニア / シニアバックエンドエンジニア。東京在住。",
 
     // Nav
     "nav.about": "私について",
@@ -328,8 +344,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
 
     // Hero
     "hero.badge": "求職中",
-    "hero.title": "シニアバックエンドエンジニア",
-    "hero.sub": "大規模分散システム 6年以上 · Springエコシステム · 東京",
+    "hero.title": "データエンジニア / シニアバックエンドエンジニア",
+    "hero.sub": "Databricks レイクハウス · 大規模分散システム 6年以上 · 東京",
     "hero.diff.h1": "@@ 保険基幹システム — NTT DATA @@",
     "hero.diff.h2": "@@ 会員DB — 楽天 @@",
     "hero.cta.primary": "職務経歴を見る",
@@ -340,9 +356,9 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "about.label": "// 私について",
     "about.title": "自己紹介",
     "about.lead":
-      "大規模分散システムに<strong>6年以上</strong>の専門経験を持つシニアバックエンドエンジニアです。ソフトウェア開発の経験は<strong>20年以上</strong>に及びます。",
+      "大規模分散システムに<strong>6年以上</strong>の専門経験を持ち、モダンな<strong>レイクハウスデータエンジニアリング</strong>へと領域を広げているデータエンジニア / シニアバックエンドエンジニアです。",
     "about.p1":
-      "<strong>Springエコシステム</strong>（Spring Boot・Spring MVC・Spring Data）とクラウドネイティブなバックエンド開発を深く習熟しています。レガシー企業システムのモダンSpringフレームワークへの<strong>刷新（レガシーモダナイゼーション）</strong>や高並行データベース移行において豊富な実績があります。",
+      "<strong>Databricks</strong>、<strong>PySpark</strong>、<strong>Delta Lake</strong>（メダリオンアーキテクチャ、Lakeflow パイプライン、Unity Catalog、CDC/SCD Type 2）の実践的知見を有し、データレイクと運用系アプリの連携を推進。強固な<strong>Springエコシステム</strong>と高並行DB移行の実績に裏打ちされています。",
     "about.p2":
       "モダンなフルスタック開発（<strong>Next.js / Convex / FastAPI</strong>）に精通し、Claude Code・Codex・Antigravityを活用した<strong>AI支援ワークフロー</strong>による高速開発を得意としています。",
     "about.lang.zh": "🇨🇳 中国語",
@@ -358,6 +374,7 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     // Skills
     "skills.label": "// 技術スキル",
     "skills.title": "使用技術",
+    "skills.dataeng.title": "データエンジニアリング & レイクハウス",
     "skills.spring.title": "Springエコシステム",
     "skills.backend.title": "バックエンド開発",
     "skills.search.title": "検索・データ",
@@ -369,8 +386,8 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "exp.label": "// 職務経歴",
     "exp.title": "職務経歴",
     "exp.ntt.role": "契約バックエンドエンジニア",
-    "exp.ntt.period": "2025年4月 — 現在",
-    "exp.ntt.badge": "在職中",
+    "exp.ntt.period": "2025年4月 — 2026年8月",
+    "exp.ntt.badge": "契約満了",
     "exp.ntt.project": "保険システム近代化（Struts → Spring）",
     "exp.ntt.b1":
       "<strong>保険基幹システム</strong>を TERASOLUNA 2.2.0 (Struts 1.x) / JDK 1.7 から<strong>TERASOLUNA 5.x (Spring MVC) / JDK 17</strong>へ近代化移行",
@@ -410,6 +427,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// 主要プロジェクト",
     "proj.title": "制作実績",
     "proj.live": "公開中",
+    "proj.helios.subtitle": "太陽系物流リアルタイムレイクハウス運用管制センター",
+    "proj.helios.desc":
+      "Databricks Lakehouse 基盤、メダリオンアーキテクチャ、およびリアクティブストリーミングを活用した惑星間物流の運用監視ダッシュボード。",
+    "proj.helios.h1": "🛰️ メダリオンアーキテクチャ（Bronze / Silver / Gold）",
+    "proj.helios.h2": "⚡ 双方向パイプライン：PySpark ストリーミング vs. Lakeflow (DLT)",
+    "proj.helios.h3": "🔄 SCD Type 2・順不同CDCイベント再処理・ウィンドウ重複排除",
+    "proj.helios.h4": "📡 統一メトリクス層 Metric Views + Lakebase + Convex リアルタイム配信",
     "proj.pera.subtitle": "高性能日本語学習エコシステム",
     "proj.pera.desc":
       "Meilisearchで数百万件のデータを高速検索するハイブリッド型マルチサービスプラットフォーム。多層AIフォールバックアーキテクチャとStripe課金を実装。",

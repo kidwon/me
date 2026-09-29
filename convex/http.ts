@@ -9,33 +9,37 @@ import { httpAction } from "./_generated/server";
  * content mirrors the public resume — nothing here that isn't already on the site.
  */
 const PROFILE = `
-# Yuan Genggeng (袁耿耿) — Senior Backend Engineer, Tokyo
+# Yuan Genggeng (袁耿耿) — Data Engineer / Senior Backend Engineer, Tokyo
 
-Summary: 6+ years in large-scale distributed systems, 20-year foundation in software.
-Strong expertise in the Spring Ecosystem (Spring Boot 2.x/3.x, Spring MVC, Spring Security,
-Spring Data JPA/MyBatis) and cloud-native backends. Specialty: Legacy Modernization
-(migrating legacy enterprise apps to modern Spring) and high-concurrency database migrations.
-Highly efficient with AI-augmented workflows (Claude Code, Codex, Antigravity).
+Summary: 6+ years in large-scale distributed systems and enterprise database migrations,
+20-year foundation in software development. Actively expanding into modern Lakehouse Data
+Engineering with deep practical mastery of Databricks, PySpark, Delta Lake (Medallion
+Architecture, Lakeflow Pipelines / DLT, Unity Catalog, CDC/SCD Type 2). Strong expertise
+in the Spring Ecosystem (Spring Boot 2.x/3.x, Spring MVC, Spring Security, Spring Data JPA/MyBatis)
+and cloud-native backends. Experienced in Legacy Modernization and bridging data lakehouses
+with real-time operational serving applications. Highly efficient with AI-augmented workflows
+(Claude Code, Codex, Antigravity).
 Human languages: Chinese (native), Japanese (business), English (business).
 Visa: Engineer / Specialist in Humanities / International Services (3-year term).
 Contact: kidyuan@foxmail.com. Location: Tokyo, Japan.
 Education: Zhejiang University of Technology — Computer Application and Maintenance.
 
 ## Technical Skills
-- Spring Ecosystem: Spring Boot (2.x/3.x), Spring MVC, Spring Security,
-  Spring Data JPA/MyBatis, Spring Core (DI/IoC).
-- Backend: Java, Kotlin, Python (FastAPI), Go, DDD, microservices, RESTful APIs,
-  scheduled batch tasks, Vert.x.
-- Programming languages: Kotlin, Java, Python, TypeScript, C#, PHP, Go, Rust, C++.
-- Search & data: Meilisearch, Kafka (CDC), Cassandra, Couchbase, Snowflake, Oracle,
-  MariaDB, Redis, RabbitMQ.
+- Data Engineering & Lakehouse: Databricks, PySpark, Delta Lake (ACID, MERGE INTO, Time Travel,
+  CDF, Liquid Clustering), Lakeflow Pipelines (DLT), Unity Catalog, Medallion Architecture
+  (Bronze/Silver/Gold), SCD Type 2, CDC, Star Schema Dimensional Modeling, Window Deduplication, SQL.
+- Distributed Backend & Systems: Java, Kotlin, Python (FastAPI), Spring Boot (2.x/3.x),
+  Spring MVC, Kafka (CDC), Cassandra, Couchbase, Snowflake, Oracle, MariaDB, Redis, RabbitMQ,
+  Microservices, DDD, Vert.x.
+- Programming languages: Python, Java, Kotlin, SQL, TypeScript, C#, Go, Rust, C++.
+- Search & Real-Time Sync: Meilisearch, Convex (reactive WebSocket state sync), RESTful APIs.
 - Cloud & DevOps: Azure (Static Web Apps, AKS), Railway, AWS, Docker, Podman, Minikube,
   GitHub Actions, GitLab CI/CD.
 - Web/full-stack: Next.js, React.js, Vue.js, Convex, Tailwind CSS.
 - AI tools: Claude Code, Codex, Antigravity; integrates LLM APIs (incl. DeepSeek).
 
 ## Experience
-- NTT DATA (Contract Backend Engineer, Apr 2025–present, Tokyo): Insurance system
+- NTT DATA (Contract Backend Engineer, Apr 2025–Aug 2026, Tokyo): Insurance system
   modernization, TERASOLUNA 2.2.0 (Struts 1.x)/JDK 1.7/Oracle 11g/intra-mart 7.2 →
   TERASOLUNA 5.x (Spring MVC)/JDK 17/Oracle 18c XE/intra-mart 8.0.36. Phase 1: JSP and
   intra-mart custom-tag refactoring. Phase 2: refactoring business logic into decoupled,
@@ -62,7 +66,15 @@ Education: Zhejiang University of Technology — Computer Application and Mainte
   across studios incl. 2K Games China (Borderlands Online), Shanghai Thinky Game, and
   others — combat systems, UI frameworks, deep performance optimization.
 
-## Personal Projects
+## Selected Projects & Showcases
+- Helios Depot Operations Console (https://kidwon.github.io/helios-ops-console/):
+  Real-time Lakehouse Operations & Reactive Dashboard. Built on Databricks Lakehouse with
+  Medallion Architecture (Bronze/Silver/Gold) and Unity Catalog governance. Dual-paradigm
+  pipelines comparing PySpark Structured Streaming + MERGE INTO vs. Lakeflow Spark Declarative
+  Pipelines (DLT). Handles 10+ streaming feeds, late-arriving data, window deduplication,
+  SCD Type 2 dimension tracking, Metric Views semantic layer, Delta CDF streaming into
+  Lakebase (Serverless PostgreSQL), and Convex Cloud reactive WebSocket push to an interactive
+  React/TypeScript space operations console with live incident simulation & stock dispatch.
 - PeraPera (perapera.me): Japanese-learning ecosystem. Next.js/Convex + FastAPI,
   Meilisearch over millions of records, multi-tier LLM fallback (incl. DeepSeek),
   Stripe subscriptions, CI/CD to Azure & Railway.

@@ -9,6 +9,19 @@ interface SkillCard {
 
 const CARDS: SkillCard[] = [
   {
+    titleKey: "skills.dataeng.title",
+    tags: [
+      { label: "Databricks", primary: true },
+      { label: "PySpark", primary: true },
+      { label: "Delta Lake", primary: true },
+      { label: "Lakeflow Pipelines (DLT)", primary: true },
+      { label: "Unity Catalog" },
+      { label: "Medallion Architecture" },
+      { label: "SCD Type 2" },
+      { label: "CDC & Streaming" },
+    ],
+  },
+  {
     titleKey: "skills.spring.title",
     tags: [
       { label: "Spring Boot (2.x/3.x)", primary: true },

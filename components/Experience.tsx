@@ -50,9 +50,6 @@ export default function Experience() {
                 <div className="timeline-meta">
                   <span className="timeline-period">{t("exp.ntt.period")}</span>
                   <span className="timeline-location">📍 Tokyo, Japan</span>
-                  <span className="timeline-badge badge-active">
-                    {t("exp.ntt.badge")}
-                  </span>
                 </div>
               </div>
               <div className="timeline-project">

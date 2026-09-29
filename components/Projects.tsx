@@ -14,6 +14,27 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    name: "Helios Ops Console",
+    url: "https://kidwon.github.io/helios-ops-console/",
+    icon: "/assets/helios.svg",
+    subtitleKey: "proj.helios.subtitle",
+    descKey: "proj.helios.desc",
+    highlightKeys: [
+      "proj.helios.h1",
+      "proj.helios.h2",
+      "proj.helios.h3",
+      "proj.helios.h4",
+    ],
+    tech: [
+      "Databricks",
+      "PySpark",
+      "Delta Lake",
+      "Lakeflow",
+      "Convex",
+      "React",
+    ],
+  },
+  {
     name: "PeraPera",
     url: "https://perapera.me",
     icon: "/assets/perapera.png",
