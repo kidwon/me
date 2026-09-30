@@ -14,24 +14,24 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    name: "Helios Ops Console",
-    url: "https://kidwon.github.io/helios-ops-console/",
-    icon: "/assets/helios.svg",
-    subtitleKey: "proj.helios.subtitle",
-    descKey: "proj.helios.desc",
+    name: "Olist Lakehouse Pipeline",
+    url: "https://github.com/kidwon/olist-lakehouse-pipeline",
+    icon: "/assets/olist.svg",
+    subtitleKey: "proj.olist.subtitle",
+    descKey: "proj.olist.desc",
     highlightKeys: [
-      "proj.helios.h1",
-      "proj.helios.h2",
-      "proj.helios.h3",
-      "proj.helios.h4",
+      "proj.olist.h1",
+      "proj.olist.h2",
+      "proj.olist.h3",
+      "proj.olist.h4",
     ],
     tech: [
       "Databricks",
       "PySpark",
       "Delta Lake",
-      "Lakeflow",
-      "Convex",
-      "React",
+      "Auto Loader",
+      "SCD Type 2",
+      "Asset Bundles",
     ],
   },
   {

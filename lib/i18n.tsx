@@ -38,6 +38,10 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "hero.diff.h2": "@@ membership DB — Rakuten @@",
     "hero.cta.primary": "View Experience",
     "hero.cta.ghost": "Get In Touch",
+    "hero.cta.resume": "Download CV",
+    "hero.cta.resume.en": "English CV (PDF)",
+    "hero.cta.resume.ja": "Japanese 職務経歴書 (PDF)",
+    "hero.cta.resume.zh": "Chinese 简历 (PDF)",
     "hero.scroll": "Scroll",
 
     // About
@@ -115,13 +119,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// selected projects",
     "proj.title": "What I've Built",
     "proj.live": "Live",
-    "proj.helios.subtitle": "Real-Time Lakehouse Data Visualization Platform",
-    "proj.helios.desc":
-      "A real-time interplanetary logistics visualization dashboard powered by Databricks Lakehouse, Medallion Architecture, and reactive streaming.",
-    "proj.helios.h1": "🛰️ Medallion Architecture (Bronze/Silver/Gold)",
-    "proj.helios.h2": "⚡ Dual pipelines: PySpark Streaming vs. Lakeflow (DLT)",
-    "proj.helios.h3": "🔄 SCD Type 2, CDC replay & window deduplication",
-    "proj.helios.h4": "📡 Metric Views + Lakebase (Postgres) + Convex push",
+    "proj.olist.subtitle": "Production-Grade Incremental Medallion Lakehouse",
+    "proj.olist.desc":
+      "An end-to-end incremental Lakehouse on Databricks processing 100k+ real Brazilian e-commerce orders, tackling duplicate delivery, out-of-order CDC, and schema drift.",
+    "proj.olist.h1": "🧱 Medallion Architecture (Bronze/Silver/Gold/Mart)",
+    "proj.olist.h2": "⚡ Auto Loader with checkpoints & _rescued_data schema guard",
+    "proj.olist.h3": "🔄 Forward-only CDC MERGE & hand-written SCD Type 2",
+    "proj.olist.h4": "🛡️ Automated DQ Gate (<5% error threshold) & 28 E2E/Unit tests",
     "proj.pera.subtitle": "High-Performance Japanese Learning Ecosystem",
     "proj.pera.desc":
       "A hybrid multi-service platform with Meilisearch powering search across millions of records. Features a multi-tier AI fallback architecture and Stripe subscriptions.",
@@ -195,6 +199,10 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "hero.diff.h2": "@@ 会员数据库 — 乐天 @@",
     "hero.cta.primary": "查看工作经历",
     "hero.cta.ghost": "联系我",
+    "hero.cta.resume": "下载简历",
+    "hero.cta.resume.en": "英文简历 (PDF)",
+    "hero.cta.resume.ja": "日文職務経歴書 (PDF)",
+    "hero.cta.resume.zh": "中文简历 (PDF)",
     "hero.scroll": "向下滚动",
 
     // About
@@ -272,13 +280,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// 精选项目",
     "proj.title": "我的作品",
     "proj.live": "访问",
-    "proj.helios.subtitle": "太阳系物流实时数据可视化平台",
-    "proj.helios.desc":
-      "基于 Databricks Lakehouse 湖仓底座与规范奖牌模型构建的星际物流实时可视化看板。",
-    "proj.helios.h1": "🛰️ 规范奖牌数据架构（Bronze / Silver / Gold）",
-    "proj.helios.h2": "⚡ 双范式管道：PySpark 流批一体 vs. Lakeflow 声明式管道",
-    "proj.helios.h3": "🔄 慢变化维（SCD Type 2）、乱序 CDC 与窗口去重",
-    "proj.helios.h4": "📡 统一语义层 Metric Views + Lakebase + Convex 实时流式分发",
+    "proj.olist.subtitle": "Databricks 生产级增量湖仓管道",
+    "proj.olist.desc":
+      "基于 Databricks 构建的增量奖牌湖仓（Medallion），处理 10万+ 巴西真实电商数据（Olist），系统性解决乱序 CDC、SCD2 历史拉链与数据漂移。",
+    "proj.olist.h1": "🧱 规范奖牌湖仓体系（Bronze / Silver / Gold / Mart）",
+    "proj.olist.h2": "⚡ Auto Loader 增量摄取与 _rescued_data 模式守卫",
+    "proj.olist.h3": "🔄 单向前行 CDC MERGE 与纯手写 SCD Type 2 历史拉链",
+    "proj.olist.h4": "🛡️ 数据质量门禁（错误率>5%自动阻断）与 28 项全链路测试",
     "proj.pera.subtitle": "高性能日语学习生态系统",
     "proj.pera.desc":
       "基于混合多服务架构，使用 Meilisearch 在百万级数据上实现高性能搜索，集成多层 AI 降级架构与 Stripe 订阅支付。",
@@ -350,6 +358,10 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "hero.diff.h2": "@@ 会員DB — 楽天 @@",
     "hero.cta.primary": "職務経歴を見る",
     "hero.cta.ghost": "お問い合わせ",
+    "hero.cta.resume": "職務経歴書",
+    "hero.cta.resume.en": "英文レジュメ (PDF)",
+    "hero.cta.resume.ja": "日本語 職務経歴書 (PDF)",
+    "hero.cta.resume.zh": "中国語 履歴書 (PDF)",
     "hero.scroll": "スクロール",
 
     // About
@@ -427,13 +439,13 @@ const TRANSLATIONS: Record<Lang, Record<string, string>> = {
     "proj.label": "// 主要プロジェクト",
     "proj.title": "制作実績",
     "proj.live": "公開中",
-    "proj.helios.subtitle": "太陽系物流リアルタイムデータ可視化プラットフォーム",
-    "proj.helios.desc":
-      "Databricks Lakehouse 基盤とメダリオンアーキテクチャに基づく、惑星間物流のリアルタイム可視化ダッシュボード。",
-    "proj.helios.h1": "🛰️ メダリオンアーキテクチャ（Bronze / Silver / Gold）",
-    "proj.helios.h2": "⚡ 双方向パイプライン：PySpark ストリーミング vs. Lakeflow (DLT)",
-    "proj.helios.h3": "🔄 SCD Type 2・順不同CDCイベント再処理・ウィンドウ重複排除",
-    "proj.helios.h4": "📡 統一メトリクス層 Metric Views + Lakebase + Convex リアルタイム配信",
+    "proj.olist.subtitle": "Databricks 本番対応・増量メダリオンレイクハウス",
+    "proj.olist.desc":
+      "ブラジルの実ECデータ（Olist 約10万注文）を基盤に、Auto Loader、順不同CDC、手動実装SCD2、データ品質ゲートを備えたDatabricks増量レイクハウス。",
+    "proj.olist.h1": "🧱 メダリオンアーキテクチャ（Bronze / Silver / Gold / Mart）",
+    "proj.olist.h2": "⚡ Auto Loader 増量取り込みと _rescued_data によるスキーマ保護",
+    "proj.olist.h3": "🔄 前進方向 CDC MERGE と手動実装 SCD Type 2 履歴管理",
+    "proj.olist.h4": "🛡️ データ品質ゲート（異常率5%超過で自動停止）と28件の自動テスト",
     "proj.pera.subtitle": "高性能日本語学習エコシステム",
     "proj.pera.desc":
       "Meilisearchで数百万件のデータを高速検索するハイブリッド型マルチサービスプラットフォーム。多層AIフォールバックアーキテクチャとStripe課金を実装。",

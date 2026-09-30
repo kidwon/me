@@ -167,6 +167,48 @@ button:focus-visible,
 }
 .mobile-nav-link:hover { color: var(--ink); }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.nav-resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.65rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule-strong);
+  background: var(--panel);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  transition: all 0.2s;
+  line-height: 1;
+  text-decoration: none;
+}
+.nav-resume-link:hover {
+  border-color: var(--shu);
+  color: var(--shu);
+  transform: translateY(-1px);
+}
+.mobile-resume-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule-strong);
+  background: var(--panel);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
 /* Language Switcher — segmented, mono */
 .lang-switcher {
   display: flex;
@@ -343,6 +385,8 @@ html[lang="ja"] .hero-name { line-height: 1.35; }
 .hero-actions {
   display: flex;
   gap: 0.9rem;
+  flex-wrap: wrap;
+  align-items: center;
   animation: fadeInUp 0.6s ease 0.35s both;
 }
 .btn {
@@ -371,6 +415,113 @@ html[lang="ja"] .hero-name { line-height: 1.35; }
   border-color: var(--ink);
   color: var(--ink);
   transform: translateY(-1px);
+}
+
+/* Resume split button & dropdown */
+.resume-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.resume-btn-group {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule-strong);
+  background: var(--panel);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s;
+}
+.resume-btn-group:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+.resume-main-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.15rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--rule-strong);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+  text-decoration: none;
+}
+.resume-main-btn:hover {
+  color: var(--shu);
+  background: rgba(179, 57, 40, 0.03);
+}
+.resume-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.65rem;
+  background: transparent;
+  border: none;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+.resume-toggle-btn:hover {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.04);
+}
+.resume-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 210px;
+  background: var(--panel);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  padding: 0.4rem;
+  z-index: 60;
+  animation: fadeInDown 0.18s ease both;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.resume-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.resume-menu-item:hover {
+  background: var(--paper-warm);
+  color: var(--shu);
+}
+.resume-menu-item.active {
+  background: rgba(179, 57, 40, 0.08);
+  color: var(--shu);
+  font-weight: 600;
+}
+.resume-menu-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--rule-strong);
+  color: var(--ink-2);
+}
+.resume-menu-item.active .resume-menu-badge {
+  background: var(--shu);
+  color: #fff;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Career diff card */

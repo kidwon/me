@@ -66,14 +66,12 @@ Education: Zhejiang University of Technology — Computer Application and Mainte
   others — combat systems, UI frameworks, deep performance optimization.
 
 ## Selected Projects & Showcases
-- Helios Depot Operations Console (https://kidwon.github.io/helios-ops-console/):
-  Real-Time Lakehouse Data Visualization Platform. Built on Databricks Lakehouse with
-  Medallion Architecture (Bronze/Silver/Gold) and Unity Catalog governance. Dual-paradigm
-  pipelines comparing PySpark Structured Streaming + MERGE INTO vs. Lakeflow Spark Declarative
-  Pipelines (DLT). Handles 10+ streaming feeds, late-arriving data, window deduplication,
-  SCD Type 2 dimension tracking, Metric Views semantic layer, Delta CDF streaming into
-  Lakebase (Serverless PostgreSQL), and Convex Cloud reactive WebSocket push to an interactive
-  React/TypeScript space logistics visualization dashboard.
+- Olist Lakehouse Pipeline (https://github.com/kidwon/olist-lakehouse-pipeline):
+  Production-Grade Incremental Medallion Lakehouse on Databricks. Built on real-world
+  e-commerce data (Olist, 100k+ orders). Features Auto Loader with checkpoints & _rescued_data,
+  forward-only CDC MERGE (handling out-of-order state updates), hand-written SCD Type 2 dimension
+  tracking with point-in-time joins, automated data quality gates (<5% threshold), Star Schema
+  Gold marts, Databricks Asset Bundles (DABs) serverless DAG, and 28 comprehensive unit/E2E tests.
 - PeraPera (perapera.me): Japanese-learning ecosystem. Next.js/Convex + FastAPI,
   Meilisearch over millions of records, multi-tier LLM fallback (incl. DeepSeek),
   Stripe subscriptions, CI/CD to Azure & Railway.

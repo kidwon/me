@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="lake_grad" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3621"/>
+      <stop offset="100%" stop-color="#931A00"/>
+    </linearGradient>
+    <linearGradient id="gold_grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="silver_grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="bronze_grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+  </defs>
+  <!-- Background hexagon / rounded squircle -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="#18131F" stroke="#2D2235" stroke-width="1.5"/>
+  <!-- Medallion layers: Gold (top), Silver (middle), Bronze (bottom) -->
+  <!-- Top layer (Gold / Mart) -->
+  <path d="M24 10L36 16.5L24 23L12 16.5L24 10Z" fill="url(#gold_grad)"/>
+  <!-- Middle layer (Silver) -->
+  <path d="M12 21.5L24 28L36 21.5V25L24 31.5L12 25V21.5Z" fill="url(#silver_grad)"/>
+  <!-- Bottom layer (Bronze) -->
+  <path d="M12 30L24 36.5L36 30V33.5L24 40L12 33.5V30Z" fill="url(#bronze_grad)"/>
+  <!-- Subtle spark accent -->
+  <circle cx="24" cy="16.5" r="2" fill="#FFF" opacity="0.9"/>
+</svg>
